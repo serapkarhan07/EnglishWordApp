@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
 public void birinciseviye (View view){
     Intent intent = new Intent(getApplicationContext(), firstLevel.class);
     startActivity(intent);
-
 }
 
 public void ikinciSeviye (View view){

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "642262252157",
+    "firebase_url": "https://englishteach-8c90f.firebaseio.com",
+    "project_id": "englishteach-8c90f",
+    "storage_bucket": "englishteach-8c90f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642262252157:android:d3b67a85c1c09ae0",
+        "android_client_info": {
+          "package_name": "com.example.sony.englishword"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642262252157-itb1fjdmgqcp5vc890h7srhbi0o4da0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJqEVYLwkG1d1JKxwAZ6LeY87lEHQ3R_8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
