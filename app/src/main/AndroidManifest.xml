@@ -38,7 +38,8 @@
         <activity android:name=".testSecond" />
         <activity android:name=".meanThird" />
         <activity android:name=".yazThird" />
-        <activity android:name=".testThird"></activity>
+        <activity android:name=".testThird" />
+        <activity android:name=".VeriEkle"></activity>
     </application>
 
 </manifest>
