@@ -14,12 +14,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
     }
+
 
 public void birinciseviye (View view){
     Intent intent = new Intent(getApplicationContext(), firstLevel.class);
     startActivity(intent);
 }
+    public void ekleme (View view){
+        Intent intent = new Intent(getApplicationContext(), VeriEkle.class);
+        startActivity(intent);
+    }
 
 public void ikinciSeviye (View view){
 
