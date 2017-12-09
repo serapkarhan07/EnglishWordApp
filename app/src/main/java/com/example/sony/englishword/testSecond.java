@@ -86,7 +86,7 @@ public class testSecond extends AppCompatActivity {
                     sayac=0;//ifler için kullanılıyor
                     Toast.makeText(getApplicationContext(),"True", Toast.LENGTH_LONG).show();
                     sayac1++;//Sayac ilk olarak burada 1
-                    for (dongu=sayac1;dongu<=36+sinir;dongu+=2) {
+                    for (dongu=sayac1;dongu<=6+sayac1;dongu+=2) {
                         oku = FirebaseDatabase.getInstance().getReference().child("users").child(String.valueOf(dongu));
                         ValueEventListener dinle = new ValueEventListener() {
                             @Override
@@ -231,7 +231,7 @@ public class testSecond extends AppCompatActivity {
                     sayac=0;//ifler için kullanılıyor
                     Toast.makeText(getApplicationContext(),"True", Toast.LENGTH_LONG).show();
                     sayac1++;//Sayac ilk olarak burada 1
-                    for (dongu=sayac1;dongu<=36+sayac1;dongu+=2) {
+                    for (dongu=sayac1;dongu<=6+sayac1;dongu+=2) {
                         oku = FirebaseDatabase.getInstance().getReference().child("users").child(String.valueOf(dongu));
                         ValueEventListener dinle = new ValueEventListener() {
                             @Override
@@ -378,7 +378,7 @@ public class testSecond extends AppCompatActivity {
                     sayac=0;//ifler için kullanılıyor
                     Toast.makeText(getApplicationContext(),"True", Toast.LENGTH_LONG).show();
                     sayac1++;//Sayac ilk olarak burada 1
-                    for (dongu=sayac1;dongu<=36+sayac1;dongu+=2) {
+                    for (dongu=sayac1;dongu<=6+sayac1;dongu+=2) {
                         oku = FirebaseDatabase.getInstance().getReference().child("users").child(String.valueOf(dongu));
                         ValueEventListener dinle = new ValueEventListener() {
                             @Override
@@ -523,7 +523,7 @@ public class testSecond extends AppCompatActivity {
                     sayac=0;//ifler için kullanılıyor
                     Toast.makeText(getApplicationContext(),"True", Toast.LENGTH_LONG).show();
                     sayac1++;//Sayac ilk olarak burada 1
-                    for (dongu=sayac1;dongu<=36+sayac1;dongu+=2) {
+                    for (dongu=sayac1;dongu<=6+sayac1;dongu+=2) {
                         oku = FirebaseDatabase.getInstance().getReference().child("users").child(String.valueOf(dongu));
                         ValueEventListener dinle = new ValueEventListener() {
                             @Override

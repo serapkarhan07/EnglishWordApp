@@ -18,7 +18,7 @@ import java.util.Random;
 
 public class testFirst extends AppCompatActivity {
     Boolean dogru=true;
-    int sayac=0,dongu,sayac1=1,rasgele=0,deneme=0,sinir=0,Bitis=0;
+    int sayac=0,dongu,sayac1=1,rasgele=0,deneme=0,sinir=2,Bitis=0;
     DatabaseReference oku;
     String kelime,kelimeK,kelimeK1,kelimeK2,kelimeK3;
     @Override
@@ -85,7 +85,7 @@ public class testFirst extends AppCompatActivity {
                     sayac=0;//ifler için kullanılıyor
                     Toast.makeText(getApplicationContext(),"True", Toast.LENGTH_LONG).show();
                     sayac1++;//Sayac ilk olarak burada 1
-                    for (dongu=sayac1;dongu<=6+sinir;dongu+=2) {
+                    for (dongu=sayac1;dongu<=6+sayac1;dongu+=2) {
                         oku = FirebaseDatabase.getInstance().getReference().child("users").child(String.valueOf(dongu));
                         ValueEventListener dinle = new ValueEventListener() {
                             @Override
