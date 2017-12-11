@@ -1,5 +1,6 @@
 package com.example.sony.englishword;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -32,13 +33,14 @@ public class yazFirst extends AppCompatActivity {
         e1=(EditText)findViewById(R.id.e1);
         b1=(Button)findViewById(R.id.onay);
 
-
-
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-
-
+                if(sayac>15)
+                {
+                    Intent intent=new Intent(yazFirst.this,MainActivity.class);
+                    startActivity(intent);
+                }
                 if(Englih.equals(e1.getText().toString())){
                     dogru=true;
                     e1.setText("");
@@ -49,11 +51,10 @@ public class yazFirst extends AppCompatActivity {
                     ValueEventListener dinle = new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
-                            Users kullanici = new Users();
-                            kullanici = dataSnapshot.getValue(Users.class);
+                            Words kullanici = new Words();
+                            kullanici = dataSnapshot.getValue(Words.class);
                             t1.setText(kullanici.tr);
                             Englih=kullanici.en;
-
                         }
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
