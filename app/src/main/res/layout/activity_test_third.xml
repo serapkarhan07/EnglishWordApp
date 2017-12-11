@@ -6,5 +6,55 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundnew"
     tools:context="com.example.sony.englishword.testThird">
+    <Button
+        android:id="@+id/test1"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="68dp"
+        android:text="Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/test2"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="192dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="68dp"
+        android:text="Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/test3"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="185dp"
+        android:text="Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/test4"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="185dp"
+        android:text="Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/testview"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="60dp"
+        android:text=""
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
