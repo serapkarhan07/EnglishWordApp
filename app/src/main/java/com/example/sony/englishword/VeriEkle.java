@@ -11,7 +11,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class VeriEkle extends AppCompatActivity {
     EditText tr,en;
-    int id=0;
+    int id=31;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference();
