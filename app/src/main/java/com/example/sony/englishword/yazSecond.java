@@ -23,6 +23,8 @@ public class yazSecond extends AppCompatActivity {
     String Englih="";
     int sayac=30,id=0;
     boolean dogru=true;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,8 @@ public class yazSecond extends AppCompatActivity {
         e1=(EditText)findViewById(R.id.e1);
         b1=(Button)findViewById(R.id.onay);
 
+        e1.setVisibility(View.INVISIBLE);
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -40,6 +44,10 @@ public class yazSecond extends AppCompatActivity {
                     Intent intent=new Intent(yazSecond.this,MainActivity.class);
                     startActivity(intent);
                 }
+
+                b1.setText("Sonraki");
+                e1.setVisibility(View.VISIBLE);
+
                 if(Englih.equals(e1.getText().toString())){
                     dogru=true;
                     e1.setText("");

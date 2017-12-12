@@ -33,6 +33,8 @@ public class yazFirst extends AppCompatActivity {
         e1=(EditText)findViewById(R.id.e1);
         b1=(Button)findViewById(R.id.onay);
 
+        e1.setVisibility(View.INVISIBLE);
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -41,6 +43,11 @@ public class yazFirst extends AppCompatActivity {
                     Intent intent=new Intent(yazFirst.this,MainActivity.class);
                     startActivity(intent);
                 }
+
+                b1.setText("Sonraki");
+                e1.setVisibility(View.VISIBLE);
+
+
                 if(Englih.equals(e1.getText().toString())){
                     dogru=true;
                     e1.setText("");
