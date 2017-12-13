@@ -1,4 +1,4 @@
-package com.example.sony.englishword;
+package com.pyildizt.sony.englishword;
 
 import org.junit.Test;
 

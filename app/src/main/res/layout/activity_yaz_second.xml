@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundnew"
-    tools:context="com.example.sony.englishword.yazSecond">
+    tools:context="com.pyildizt.sony.englishword.yazSecond">
     <TextView
         android:id="@+id/t1"
         android:layout_width="132dp"

@@ -1,4 +1,4 @@
-package com.example.sony.englishword;
+package com.pyildizt.sony.englishword;
 
 /**
  * Created by Rabia on 7.12.2017.

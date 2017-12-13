@@ -1,4 +1,4 @@
-package com.example.sony.englishword;
+package com.pyildizt.sony.englishword;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -16,22 +16,23 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Random;
 
-public class testFirst extends AppCompatActivity {
-    Boolean dogru=true;
-    int sayac=0,dongu,sayac1=1,rasgele=0,deneme=0,sinir=2,Bitis=0;
+public class testSecond extends AppCompatActivity {
+
+   Boolean dogru=true;
+    int sayac=0,dongu,sayac1=31,rasgele=0,deneme=0,sinir=0,Bitis=0;
     DatabaseReference oku;
     String kelime,kelimeK,kelimeK1,kelimeK2,kelimeK3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_first);
+        setContentView(R.layout.activity_test_second);
         final Button tst1=(Button)findViewById(R.id.test1);
         final Button tst2=(Button)findViewById(R.id.test2);
         final Button tst3=(Button)findViewById(R.id.test3);
         final Button tst4=(Button)findViewById(R.id.test4);
         final TextView txt= (TextView)findViewById(R.id.testview);
 
-        for (dongu=1;dongu<5;dongu++) {
+        for (dongu=31;dongu<35;dongu++) {
             oku = FirebaseDatabase.getInstance().getReference().child("users").child(String.valueOf(dongu));
             ValueEventListener dinle = new ValueEventListener() {
                 @Override
@@ -72,7 +73,7 @@ public class testFirst extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (Bitis > 10){
-                    Intent ıntent = new Intent(testFirst.this, MainActivity.class);
+                    Intent ıntent = new Intent(testSecond.this, MainActivity.class);
                     startActivity(ıntent);
                 }
                 if(kelimeK.equals(txt.getText().toString()))
@@ -216,7 +217,7 @@ public class testFirst extends AppCompatActivity {
             public void onClick(View v) {
                 if(Bitis>10)
                 {
-                    Intent ıntent=new Intent(testFirst.this,MainActivity.class);
+                    Intent ıntent=new Intent(testSecond.this,MainActivity.class);
                     startActivity(ıntent);
                 }
                 if(kelimeK1.equals(txt.getText().toString()))
@@ -363,7 +364,7 @@ public class testFirst extends AppCompatActivity {
             public void onClick(View v) {
                 if(Bitis>10)
                 {
-                    Intent ıntent=new Intent(testFirst.this,MainActivity.class);
+                    Intent ıntent=new Intent(testSecond.this,MainActivity.class);
                     startActivity(ıntent);
                 }
                 if(kelimeK2.equals(txt.getText().toString()))
@@ -508,7 +509,7 @@ public class testFirst extends AppCompatActivity {
             public void onClick(View v) {
                 if(Bitis>10)
                 {
-                    Intent ıntent=new Intent(testFirst.this,MainActivity.class);
+                    Intent ıntent=new Intent(testSecond.this,MainActivity.class);
                     startActivity(ıntent);
                 }
                 if(kelimeK3.equals(txt.getText().toString()))
@@ -651,3 +652,4 @@ public class testFirst extends AppCompatActivity {
 
     }
 }
+
