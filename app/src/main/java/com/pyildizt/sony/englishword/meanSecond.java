@@ -1,4 +1,4 @@
-package com.example.sony.englishword;
+package com.pyildizt.sony.englishword;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,11 +13,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class meanThird extends AppCompatActivity {
+public class meanSecond extends AppCompatActivity {
 
-    Button ileri3;
-    int sayac1=60;
-    TextView tv3;
+    Button ileri2;
+    int sayac1=30;
+    TextView tv2;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference();
     DatabaseReference oku;
@@ -25,24 +25,20 @@ public class meanThird extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mean_third);
+        setContentView(R.layout.activity_mean_second);
+        tv2=(TextView)findViewById(R.id.tv2);
 
-        tv3=(TextView)findViewById(R.id.tv3);
-
-        ileri3=(Button)findViewById(R.id.ileri3);
-        ileri3.setOnClickListener(new View.OnClickListener() {
+        ileri2=(Button)findViewById(R.id.bt2);
+        ileri2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-                if(sayac1==90)
+                if(sayac1==60)
                 {
                     Toast.makeText(getApplicationContext(),"Kelimelerimiz tamamlandı", Toast.LENGTH_LONG).show();
-                    sayac1 = 60;
+                    sayac1 = 30;
 
                 }
-                ileri3.setText("Sonraki");
-
+                ileri2.setText("Sonraki");
                 sayac1++;
                 oku= FirebaseDatabase.getInstance().getReference().child("users").child(String.valueOf(sayac1));
                 ValueEventListener dinle=new ValueEventListener() {
@@ -50,7 +46,7 @@ public class meanThird extends AppCompatActivity {
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         Words kelime=new Words();
                         kelime=dataSnapshot.getValue(Words.class);
-                        tv3.setText(kelime.en+"\n"+kelime.tr);
+                        tv2.setText(kelime.en+"\n"+kelime.tr);
                     }
 
                     @Override
@@ -58,8 +54,17 @@ public class meanThird extends AppCompatActivity {
 
                     }
                 };
+               if(sayac1==60)
+                {
+                    Toast.makeText(getApplicationContext(),"Kelimelerimiz tamamlandı", Toast.LENGTH_LONG).show();
+                    sayac1 = 30;
+
+                }
                 oku.addValueEventListener(dinle);
+
             }
         });
+
+
     }
 }

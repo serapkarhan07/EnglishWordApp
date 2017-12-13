@@ -1,4 +1,4 @@
-package com.example.sony.englishword;
+package com.pyildizt.sony.englishword;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,20 +15,18 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class yazFirst extends AppCompatActivity {
-
-    DatabaseReference oku,okuu;
+public class yazThird extends AppCompatActivity {
+    DatabaseReference oku;
     TextView t1;
     EditText e1;
     Button b1;
     String Englih="";
-    int sayac=0,id=0;
+    int sayac=60,id=0;
     boolean dogru=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_yaz_first);
-
+        setContentView(R.layout.activity_yaz_third);
 
         t1=(TextView)findViewById(R.id.t1);
         e1=(EditText)findViewById(R.id.e1);
@@ -39,9 +37,9 @@ public class yazFirst extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                if(sayac>15)
+                if(sayac>75)
                 {
-                    Intent intent=new Intent(yazFirst.this,MainActivity.class);
+                    Intent intent=new Intent(yazThird.this,MainActivity.class);
                     startActivity(intent);
                 }
 
@@ -76,9 +74,7 @@ public class yazFirst extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Yanlış", Toast.LENGTH_LONG).show();
                     e1.setText("");
                 }
-
             }
         });
-
     }
 }
