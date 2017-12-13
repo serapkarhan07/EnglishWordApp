@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundnew"
-    tools:context="com.example.sony.englishword.testThird">
+    tools:context="com.pyildizt.sony.englishword.testThird">
 
     <Button
         android:id="@+id/test1"

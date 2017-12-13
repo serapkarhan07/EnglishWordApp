@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sony.englishword">
+    package="com.pyildizt.sony.englishword">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.pyildizt.sony.englishword.MainActivity"
             android:label="EnglishWord">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Splash"
+            android:name="com.pyildizt.sony.englishword.Splash"
             android:label="EnglishWord">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,19 +27,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".firstLevel" />
-        <activity android:name=".secondLevel" />
-        <activity android:name=".thirdLevel" />
-        <activity android:name=".meanFirst" />
-        <activity android:name=".yazFirst" />
-        <activity android:name=".testFirst" />
-        <activity android:name=".meanSecond" />
-        <activity android:name=".yazSecond" />
-        <activity android:name=".testSecond" />
-        <activity android:name=".meanThird" />
-        <activity android:name=".yazThird" />
-        <activity android:name=".testThird" />
-        <activity android:name=".VeriEkle"></activity>
+        <activity android:name="com.pyildizt.sony.englishword.firstLevel" />
+        <activity android:name="com.pyildizt.sony.englishword.secondLevel" />
+        <activity android:name="com.pyildizt.sony.englishword.thirdLevel" />
+        <activity android:name="com.pyildizt.sony.englishword.meanFirst" />
+        <activity android:name="com.pyildizt.sony.englishword.yazFirst" />
+        <activity android:name="com.pyildizt.sony.englishword.testFirst" />
+        <activity android:name="com.pyildizt.sony.englishword.meanSecond" />
+        <activity android:name="com.pyildizt.sony.englishword.yazSecond" />
+        <activity android:name="com.pyildizt.sony.englishword.testSecond" />
+        <activity android:name="com.pyildizt.sony.englishword.meanThird" />
+        <activity android:name="com.pyildizt.sony.englishword.yazThird" />
+        <activity android:name="com.pyildizt.sony.englishword.testThird" />
+        <activity android:name="com.pyildizt.sony.englishword.VeriEkle"></activity>
     </application>
 
 </manifest>
